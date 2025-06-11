@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src="/https://en.wikipedia.org/wiki/File:2018.01.05.17.43.25-Usman_Khawaja_%26_Steve_Smith_(38876757994)_(Khawaja_cropped).jpg"
           alt="Next.js logo"
           width={180}
           height={38}
