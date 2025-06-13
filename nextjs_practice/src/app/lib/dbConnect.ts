@@ -26,3 +26,16 @@ export default dbConnect;
 // This function ensures that the database connection is established only once
 // and can be reused across different parts of the application.
 // It also handles errors gracefully and logs the connection status.
+
+// -------------------------------------------------------
+// In api Route:
+
+// app/api/users/route.ts
+// import { connectDB } from '@/lib/db';
+// import User from '@/models/User'; // Your Mongoose model
+
+// export async function GET() {
+//   await connectDB();
+//   const users = await User.find();
+//   return Response.json(users);
+// }
