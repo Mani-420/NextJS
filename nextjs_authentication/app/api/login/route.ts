@@ -1,9 +1,10 @@
-import { users } from '../../lib/users';
+import { users } from '@/lib/users';
+// import { users } from '../../../lib/users';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { NextRequest } from 'next/server';
 
-const SECRET = 'your_jwt_secret'; // Use env var in production
+const SECRET = 'your_jwt_secret';
 
 export async function POST(request: NextRequest) {
   const { username, password } = await request.json();
